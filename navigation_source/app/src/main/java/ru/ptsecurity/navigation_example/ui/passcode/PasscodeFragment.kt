@@ -1,4 +1,4 @@
-package ru.ptsecurity.navigation_example.ui.pincode
+package ru.ptsecurity.navigation_example.ui.passcode
 
 import android.os.Bundle
 import android.view.View

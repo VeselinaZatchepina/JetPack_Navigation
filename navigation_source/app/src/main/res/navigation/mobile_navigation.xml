@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_passcode"
-        android:name="ru.ptsecurity.navigation_example.ui.pincode.PasscodeFragment"
+        android:name="ru.ptsecurity.navigation_example.ui.passcode.PasscodeFragment"
         android:label="@string/title_passcode"
         tools:layout="@layout/fragment_passcode">
     </fragment>
@@ -62,4 +62,14 @@
         android:label="@string/title_deferred"
         tools:layout="@layout/fragment_deferred" />
 
+    <fragment
+        android:id="@+id/navigation_webview"
+        android:name="ru.ptsecurity.navigation_example.ui.webview.WebViewFragment"
+        android:label="@string/title_webview"
+        tools:layout="@layout/fragment_webview">
+        <argument
+            android:name="url"
+            app:argType="string"
+            android:defaultValue=""/>
+    </fragment>
 </navigation>
