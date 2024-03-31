@@ -32,4 +32,15 @@
         android:text="Open Webview"
         app:layout_constraintTop_toBottomOf="@+id/text_home"/>
 
+    <Button
+        android:id="@+id/write_data_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Write data to file"
+        app:layout_constraintTop_toBottomOf="@+id/open_wv_btn"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

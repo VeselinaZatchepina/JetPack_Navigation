@@ -72,4 +72,15 @@
             app:argType="string"
             android:defaultValue=""/>
     </fragment>
+
+    <fragment
+        android:id="@+id/navigation_write_to_file"
+        android:name="ru.ptsecurity.navigation_example.ui.writetofile.WriteToFileFragment"
+        android:label="@string/title_file"
+        tools:layout="@layout/fragment_write_to_file">
+        <argument
+            android:name="data"
+            app:argType="string"
+            android:defaultValue=""/>
+    </fragment>
 </navigation>

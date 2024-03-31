@@ -34,5 +34,15 @@ class HomeFragment : Fragment() {
                 args
             )
         }
+
+        binding.writeDataBtn.setOnClickListener {
+            val args = Bundle()
+            args.putString("data", "https://mobile-stingray.ru/")
+
+            findNavController().navigate(
+                R.id.navigation_write_to_file,
+                args
+            )
+        }
     }
 }
