@@ -6,6 +6,13 @@
     app:startDestination="@+id/navigation_home">
 
     <fragment
+        android:id="@+id/navigation_passcode"
+        android:name="ru.ptsecurity.navigation_example.ui.pincode.PasscodeFragment"
+        android:label="@string/title_passcode"
+        tools:layout="@layout/fragment_passcode">
+    </fragment>
+
+    <fragment
         android:id="@+id/navigation_home"
         android:name="ru.ptsecurity.navigation_example.ui.home.HomeFragment"
         android:label="@string/title_home"
