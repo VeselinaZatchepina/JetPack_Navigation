@@ -12,7 +12,7 @@ import ru.ptsecurity.navigation_example.databinding.FragmentWriteToFileBinding
 
 open class WriteToFileFragment : Fragment(R.layout.fragment_write_to_file) {
 
-    protected val binding by viewBinding(FragmentWriteToFileBinding::bind)
+    private val binding by viewBinding(FragmentWriteToFileBinding::bind)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

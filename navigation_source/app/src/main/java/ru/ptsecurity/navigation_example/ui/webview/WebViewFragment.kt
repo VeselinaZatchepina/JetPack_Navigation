@@ -23,7 +23,7 @@ open class WebViewFragment : Fragment(R.layout.fragment_webview) {
                 settings.allowFileAccess = true
 
                 val safeArgs: WebViewFragmentArgs by navArgs()
-                if (safeArgs.url.isNotEmpty()){
+                if (safeArgs.url.isNotEmpty()) {
                     loadUrl(safeArgs.url)
                 }
             }

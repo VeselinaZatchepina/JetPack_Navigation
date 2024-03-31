@@ -11,10 +11,11 @@ import ru.ptsecurity.navigation_example.databinding.FragmentPasscodeBinding
 
 open class PasscodeFragment : Fragment(R.layout.fragment_passcode) {
 
-    protected val binding by viewBinding(FragmentPasscodeBinding::bind)
+    private val binding by viewBinding(FragmentPasscodeBinding::bind)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         binding.passcodeView.apply {
             setOnChangePasscodeListener { _, isCompleted, _ ->
                 if (isCompleted) {
