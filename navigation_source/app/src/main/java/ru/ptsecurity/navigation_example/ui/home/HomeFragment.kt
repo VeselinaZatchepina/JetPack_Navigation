@@ -44,5 +44,36 @@ class HomeFragment : Fragment() {
                 args
             )
         }
+
+        binding.saveToDbBtn.setOnClickListener {
+            val args = Bundle()
+            args.putString("name", "Johnny")
+            args.putString("surname", "Blaze")
+
+            findNavController().navigate(
+                R.id.navigation_save_to_db,
+                args
+            )
+        }
+
+        binding.intentWithUrlBtn.setOnClickListener {
+            val args = Bundle()
+            args.putString("url", "https://gratisography.com/wp-content/uploads/2023/01/gratisography-frog-racer-free-stock-photo-1165x780.jpg")
+
+            findNavController().navigate(
+                R.id.navigation_intent_with_url,
+                args
+            )
+        }
+
+        binding.showInfoBtn.setOnClickListener {
+            val args = Bundle()
+            args.putString("info", "My Info")
+
+            findNavController().navigate(
+                R.id.navigation_show_info,
+                args
+            )
+        }
     }
 }
