@@ -75,5 +75,15 @@ class HomeFragment : Fragment() {
                 args
             )
         }
+
+        binding.showInnerBtn.setOnClickListener {
+            val args = Bundle()
+            args.putString("info", "My Inner Info")
+
+            findNavController().navigate(
+                R.id.toInner,
+                args
+            )
+        }
     }
 }
